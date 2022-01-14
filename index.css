@@ -1,0 +1,40 @@
+* {
+	background-color: gray;
+	color: whitesmoke;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+.name {
+	/* width: 50%; */
+	border: 1px solid black;
+}
+img {
+	/* width: 50%; */
+	float: right;
+	border: 1px solid black;
+}
+p {
+	border: 1px solid black;
+}
+h2 {
+	border: 1px solid black;
+}
+footer {
+	border: 1px solid black;
+}
+ul {
+	border: 1px solid black;
+}
+li {
+	border: 1px solid black;
+}
+span {
+	border: 1px solid black;
+}
+a {
+	border: 1px solid black;
+}
