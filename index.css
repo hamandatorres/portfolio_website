@@ -1,24 +1,32 @@
-* {
+body {
 	background-color: gray;
 	color: whitesmoke;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	font-family: "Courier New", Courier, monospace;
 }
 
-body {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
+.intro-box {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	/* border: 10px solid black; */
+	width: 100%;
+}
+.intro-container {
+	padding: 2px 16px;
+	text-align: center;
 }
 .name {
 	/* width: 50%; */
 	border: 1px solid black;
 }
-img {
-	/* width: 50%; */
-	float: right;
-	border: 1px solid black;
-}
+
 p {
 	border: 1px solid black;
+	text-indent: 1.5em;
+}
+br {
 }
 h2 {
 	border: 1px solid black;
