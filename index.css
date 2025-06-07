@@ -1,14 +1,8 @@
 * {
 	margin: 0;
+	box-sizing: border-box;
 	/* padding: 0%; */
 }
-img,
-a {
-	border: none;
-	outline: none;
-	padding: 1vw;
-}
-
 @media (min-width: 400px) {
 	img {
 		/* border: 1px solid rgb(83, 73, 73); */
@@ -26,12 +20,42 @@ a {
 		position: relative;
 	}
 }
+
+img {
+  display: block;
+  margin: auto;
+  max-width: min(90vw, 320px);
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  img {
+    max-width: min(60vw, 320px);
+  }
+}
+
+@media (min-width: 900px) {
+  img {
+    max-width: min(40vw, 320px);
+  }
+}
+
+@media (min-width: 1300px) {
+  img {
+    max-width: min(20vw, 320px);
+  }
+}
+html,
+body {
+	overflow-x: hidden;
+}
 body {
 	background-color: rgb(32, 32, 32);
 	color: whitesmoke;
 	display: flex;
 	flex-flow: column;
-	font-family: "Courier New", Courier, monospace;
+	/* font-family: "Courier New", Courier, monospace; */
+	font-family: "Inter", "Roboto", "Montserrat", Arial, sans-serif;
 	justify-content: center;
 	line-height: calc(1em + 0.5rem);
 	text-align: center;
@@ -40,7 +64,7 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
 	/* border: 10px solid black; */
-	width: 100%;
+	/* width: 100%; */
 	.name {
 		/* font-size: 2.5rem; */
 		font-weight: bold;
@@ -57,7 +81,7 @@ body {
 	padding: 2vw;
 }
 .bio-title {
-	font-size: 1.5rem;
+	font-size: larger;
 	font-weight: bold;
 	color: rgb(255, 255, 255);
 }
@@ -68,9 +92,9 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	transition: 0.3s;
 	/* border: 10px solid black; */
-	width: 100%;
+	width: 100vw;
 }
 .projects-container {
-	padding: 2px 16px;
+	/* padding: 2px 16px; */
 	text-align: center;
 }
