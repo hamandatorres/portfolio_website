@@ -1,56 +1,394 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="index.css" />
-  <title>Document</title>
-</head>
-<body>
-  <div class="intro-box">
-  <img src="20201222_115124.jpg" alt="Picture of Carlos and Lacey Chavez" class="intro-image">
-  <div class="intro-container">
-  <h1 class="name">Carlos A Chavez</h1>
-</div>
-</div>
-  <div>
-    <div class="bio-box">
-      <p>
-    <p class="bio-title">Hello! Welcome to my website. Let me introduce myself:</p>
-    <!-- <br></br> -->
-    <!-- Add this to your HTML where you want a dropdown section -->
-<details>
-  <summary>My Story</summary>
-  <p>
-  <br>
-  My family emigrated to the United States when I was 10 years old. My sister and I arrived at the JFK Airport in February of 2000 with no knowledge of the language or the culture. Soon after we moved around the country until we settled in the California Bay Area. It was there that I spend my formative years, graduating from De Anza High School in Richmond, CA.
-  </br>
-  <br>Soon after graduating I left on a two-year full time proselyting mission for the Church of Jesus Christ of Latter-Day Saints, Spanish speaking. It was there that I developed many of the positive attributes I possess today and matured into my own person. I learned the founding principles which I base my life including how to work with others, how to empathize with those who are different than me, and how to work hard in the face of rejection and adversity.
-</br>
-  <br>After those two years I returned home where I attended American River Community College in Sacramento, Ca. Nevertheless, after just a year I felt the need to move to the state of Utah where I started my long-time career in the food service industry. It began at Pizza Hut as a delivery driver, and as I grew into the role and enjoyed my time with the company, I became a shift manager and eventually a General Manager where I had the opportunity to manage two different stores, in Payson and American Fork, UT. I left that company in 2016 and joined Domino’s ever-growing organization. There I would also go on to promote to General Manager and personally manage three stores, in Roy, South Jordan and Highland, UT. It was in these roles that I was able to develop my leadership skills as well as my business administration skills as I oversaw hiring, training, and the day-to-day operations of the store. This was a challenging task in trying to execute company standards, keep up with ever growing sales demands as well as deal with the drastic and never-before seen challenge of the COVID-19 pandemic. However, I am grateful for those opportunities which provided me rapid growth as a leader, and it is where I met my wonderful wife.</br>
-  <br> At the beginning of 2021 I joined the Dev Mountain bootcamp course for full stack Web Development. My interest in the field had always been present but until then I did not have the opportunity to pursue the knowledge required to transition into that field. I enjoy front as well as back-end development, including working with Reactjs, PostgresQL, Nodejs, Javascript, Typescript and many of the other facets of the industry. My hobbies include watching movies, playing video games, writing, reading manga and serving my community through church related activities and projects.</br>
-  </p>
-</details>
-  </p>
-  </div>
-    <div>
-      <div class="projects-box">
-        <br></br>
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <a href="http://www.toptablegames.net" >Top Table Games</a>
-            <br></br>
-            <span>Synopsis: A website wherein users can create a profile, search, rate and track table top games. It was built with React and Typescript on the front end and Nodejs and PostgresQL in the backend.</span>
-        </>
-        <br></br>
-      </div>
-      <div class="contact-box">
-      <h4>Contact Me</h4>
-      <hr>carlos.chavez.perez@hotmail</hr>
-      <hr><a href="github.com/hamandatorres">github</a></hr>
-      <hr><a href="https://www.linkedin.com/in/carlos-chavez-perez-141926208">linkedin</a></hr>
-      </div>
-    </div>
-  </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<script src="portfolio.js" defer></script>
+		<title>Carlos A Chavez - Portfolio</title>
+		<meta
+			name="description"
+			content="Portfolio website of Carlos A Chavez - Full Stack Web Developer with experience in React, Node.js, and PostgreSQL"
+		/>
+	</head>
+	<body>
+		<!-- Header section with profile image and name -->
+		<header class="intro-box">
+			<img
+				src="20201222_115124.jpg"
+				alt="Portrait of Carlos and Lacey Chavez"
+				class="intro-image"
+			/>
+			<div class="intro-container">
+				<h1 class="name">Carlos A Chavez</h1>
+			</div>
+		</header>
+
+		<!-- Main content area -->
+		<main>
+			<!-- Biography section -->
+			<section class="bio-box">
+				<p class="bio-title">
+					Hello! Welcome to my website. Let me introduce myself:
+				</p>
+
+				<!-- Expandable biography section -->
+				<div class="story-section">
+					<button
+						class="story-toggle"
+						id="storyToggle"
+						aria-expanded="false"
+						aria-controls="storyContent"
+					>
+						<span class="story-title">My Story</span>
+						<span class="toggle-icon">+</span>
+					</button>
+					<div class="story-content" id="storyContent" aria-hidden="true">
+						<p>
+							<strong>From Immigrant to Developer:</strong> I arrived in the US
+							at age 10 with my sister, speaking no English. After settling in
+							the California Bay Area, I graduated from De Anza High School and
+							embarked on a two-year Spanish-speaking mission that shaped my
+							core values of empathy, perseverance, and collaboration.
+						</p>
+
+						<p>
+							<strong>Leadership Through Service:</strong> My career in food
+							service taught me invaluable lessons about leadership and business
+							operations. Starting as a Pizza Hut delivery driver, I quickly
+							advanced to General Manager, eventually overseeing five different
+							stores across Utah for both Pizza Hut and Domino's. Managing teams
+							through rapid growth and the COVID-19 pandemic honed my ability to
+							adapt, lead under pressure, and maintain high standards—skills
+							that translate perfectly to software development.
+						</p>
+
+						<p>
+							<strong>The Tech Transition:</strong> In 2021, I took the leap
+							into web development through Dev Mountain's full-stack bootcamp.
+							What started as a long-held interest became my passion. I love
+							crafting solutions with React.js, Node.js, PostgreSQL, JavaScript,
+							and TypeScript, bringing the same dedication to code quality that
+							I brought to restaurant operations.
+						</p>
+
+						<p>
+							<strong>Beyond Code:</strong> When I'm not building applications,
+							you'll find me watching movies, gaming, reading manga, or
+							contributing to community projects through my church. Most
+							importantly, this journey led me to my wonderful wife—proving that
+							sometimes the best things come from unexpected career paths.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Projects showcase section -->
+			<section class="projects-box">
+				<h2>Projects</h2>
+
+				<div class="projects-container">
+					<div class="project-item">
+						<h3>
+							<a
+								href="http://www.toptablegames.net"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Top Table Games
+							</a>
+						</h3>
+						<p class="project-description">
+							<strong>Synopsis:</strong> A website wherein users can create a
+							profile, search, rate and track table top games. It was built with
+							React and TypeScript on the front end and Node.js and PostgreSQL
+							in the backend.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact information section -->
+			<section class="contact-box">
+				<h2>Contact Me</h2>
+
+				<div class="contact-info">
+					<div class="contact-item">
+						<strong>Email:</strong>
+						<a href="mailto:carlos.chavez.perez@hotmail.com"
+							>carlos.chavez.perez@hotmail.com</a
+						>
+					</div>
+
+					<div class="contact-item">
+						<strong>GitHub:</strong>
+						<a
+							href="https://github.com/hamandatorres"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							github.com/hamandatorres
+						</a>
+					</div>
+
+					<div class="contact-item">
+						<strong>LinkedIn:</strong>
+						<a
+							href="https://www.linkedin.com/in/carlos-chavez-perez-141926208"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							LinkedIn Profile
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer for additional semantic structure -->
+		<footer>
+			<p>&copy; 2024 Carlos A Chavez. All rights reserved.</p>
+		</footer>
+
+		<script>
+			// Smooth scrolling for internal links
+			function addSmoothScrolling() {
+				const links = document.querySelectorAll('a[href^="#"]');
+				links.forEach((link) => {
+					link.addEventListener("click", function (e) {
+						e.preventDefault();
+						const target = document.querySelector(this.getAttribute("href"));
+						if (target) {
+							target.scrollIntoView({
+								behavior: "smooth",
+								block: "start",
+							});
+						}
+					});
+				});
+			}
+
+			// Add loading animation to external links
+			function addLinkLoadingStates() {
+				const externalLinks = document.querySelectorAll(
+					'a[href^="http"], a[href^="mailto"]'
+				);
+				externalLinks.forEach((link) => {
+					link.addEventListener("click", function () {
+						this.style.opacity = "0.7";
+						this.innerHTML += ' <span class="loading">...</span>';
+
+						// Reset after 2 seconds (in case user doesn't navigate away)
+						setTimeout(() => {
+							this.style.opacity = "1";
+							const loading = this.querySelector(".loading");
+							if (loading) loading.remove();
+						}, 2000);
+					});
+				});
+			}
+
+			// Responsive navigation for mobile (if you add a nav menu later)
+			function createMobileMenu() {
+				// Create a simple mobile-friendly menu button
+				const header = document.querySelector(".intro-box");
+				const menuButton = document.createElement("button");
+				menuButton.innerHTML = "☰";
+				menuButton.className = "mobile-menu-btn";
+				menuButton.setAttribute("aria-label", "Toggle mobile menu");
+
+				// Style the button (inline for simplicity)
+				menuButton.style.cssText = `
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #333;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+      `;
+
+				// Show button on small screens
+				function toggleMobileButton() {
+					if (window.innerWidth <= 768) {
+						menuButton.style.display = "block";
+					} else {
+						menuButton.style.display = "none";
+					}
+				}
+
+				window.addEventListener("resize", toggleMobileButton);
+				toggleMobileButton(); // Initial check
+
+				document.body.appendChild(menuButton);
+			}
+
+			// Intersection Observer for scroll animations
+			function addScrollAnimations() {
+				const observerOptions = {
+					threshold: 0.1,
+					rootMargin: "0px 0px -50px 0px",
+				};
+
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							entry.target.style.opacity = "1";
+							entry.target.style.transform = "translateY(0)";
+							entry.target.style.transition =
+								"opacity 0.6s ease, transform 0.6s ease";
+						}
+					});
+				}, observerOptions);
+
+				// Observe all main sections
+				const sections = document.querySelectorAll(
+					".bio-box, .projects-box, .contact-box"
+				);
+				sections.forEach((section) => {
+					section.style.opacity = "0";
+					section.style.transform = "translateY(30px)";
+					observer.observe(section);
+				});
+			}
+
+			// Form validation for contact (if you add a contact form later)
+			function addFormValidation() {
+				// This is ready for when you add a contact form
+				const forms = document.querySelectorAll("form");
+				forms.forEach((form) => {
+					form.addEventListener("submit", function (e) {
+						const inputs = form.querySelectorAll(
+							"input[required], textarea[required]"
+						);
+						let isValid = true;
+
+						inputs.forEach((input) => {
+							if (!input.value.trim()) {
+								input.style.borderColor = "#ff6b6b";
+								isValid = false;
+							} else {
+								input.style.borderColor = "#4ecdc4";
+							}
+						});
+
+						if (!isValid) {
+							e.preventDefault();
+							alert("Please fill in all required fields.");
+						}
+					});
+				});
+			}
+
+			// Lazy loading for images
+			function addLazyLoading() {
+				const images = document.querySelectorAll("img");
+
+				if ("IntersectionObserver" in window) {
+					const imageObserver = new IntersectionObserver((entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const img = entry.target;
+								img.style.transition = "opacity 0.3s";
+								img.style.opacity = "1";
+								imageObserver.unobserve(img);
+							}
+						});
+					});
+
+					images.forEach((img) => {
+						img.style.opacity = "0.7";
+						imageObserver.observe(img);
+					});
+				}
+			}
+
+			// Enhanced details/summary interaction
+			function enhanceDetailsElements() {
+				const details = document.querySelectorAll("details");
+
+				details.forEach((detail) => {
+					const summary = detail.querySelector("summary");
+
+					summary.addEventListener("click", function () {
+						// Add a small delay to allow the default behavior to complete
+						setTimeout(() => {
+							if (detail.open) {
+								// Scroll the opened section into view
+								detail.scrollIntoView({
+									behavior: "smooth",
+									block: "nearest",
+								});
+							}
+						}, 100);
+					});
+				});
+			}
+
+			// Responsive text sizing
+			function adjustTextForViewport() {
+				const name = document.querySelector(".name");
+				const bioTitle = document.querySelector(".bio-title");
+
+				function adjustSizes() {
+					const viewportWidth = window.innerWidth;
+
+					if (viewportWidth <= 480) {
+						if (name) name.style.fontSize = "clamp(1.5rem, 4vw, 2.5rem)";
+						if (bioTitle) bioTitle.style.fontSize = "clamp(1rem, 3vw, 1.2rem)";
+					} else if (viewportWidth <= 768) {
+						if (name) name.style.fontSize = "clamp(2rem, 5vw, 3rem)";
+						if (bioTitle)
+							bioTitle.style.fontSize = "clamp(1.1rem, 3vw, 1.3rem)";
+					}
+				}
+
+				window.addEventListener("resize", adjustSizes);
+				adjustSizes(); // Initial adjustment
+			}
+
+			// Initialize all functionality when DOM is loaded
+			document.addEventListener("DOMContentLoaded", function () {
+				addSmoothScrolling();
+				addLinkLoadingStates();
+				createMobileMenu();
+				addScrollAnimations();
+				addFormValidation();
+				addLazyLoading();
+				enhanceDetailsElements();
+				adjustTextForViewport();
+
+				console.log(
+					"🚀 Portfolio website enhanced with responsive JavaScript!"
+				);
+			});
+
+			// Performance optimization: Debounce resize events
+			function debounce(func, wait) {
+				let timeout;
+				return function executedFunction(...args) {
+					const later = () => {
+						clearTimeout(timeout);
+						func(...args);
+					};
+					clearTimeout(timeout);
+					timeout = setTimeout(later, wait);
+				};
+			}
+
+			// Apply debouncing to resize-heavy functions
+			window.addEventListener(
+				"resize",
+				debounce(() => {
+					console.log("Window resized - adjusting responsive elements");
+				}, 250)
+			);
+		</script>
+	</body>
 </html>
