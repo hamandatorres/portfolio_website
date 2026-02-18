@@ -1,5 +1,9 @@
 # 🚀 GitHub Webhook Auto-Deployment — Carlos’s Setup
 
+## Operations
+
+- Deployment workflow and troubleshooting: [DEPLOYMENT-WORKFLOW-RUNBOOK.md](DEPLOYMENT-WORKFLOW-RUNBOOK.md)
+
 This repository is connected to a custom GitHub webhook that triggers automatic deployments to a live server using a secure shell script. This document outlines the architecture, issues encountered during setup, and the implemented solutions.
 
 ---
